@@ -4,8 +4,8 @@ require 'Date'
 
 month_days_hash = {}
 (1..12).each do |month_number| 
-	month_name = Date::MONTHNAMES[month_number]
-	month_days = Date.new(2020, month_number, -1).day
+  month_name = Date::MONTHNAMES[month_number]
+  month_days = Date.new(2020, month_number, -1).day
   month_days_hash[month_name] = month_days
 end
 
