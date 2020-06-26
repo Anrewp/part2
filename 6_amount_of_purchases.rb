@@ -25,8 +25,8 @@ end
 sum_for_all_products = 0
 puts products_hash
 products_hash.each do |p_name, p_info|
-	product_sum = (p_info[:price] * p_info[:amount]).round(2)
-	puts "Sum for all #{p_name} products is: #{ product_sum }"
-	sum_for_all_products += product_sum
+  product_sum = (p_info[:price] * p_info[:amount]).round(2)
+  puts "Sum for all #{p_name} products is: #{ product_sum }"
+  sum_for_all_products += product_sum
 end
 puts "Sum for all proucts is: #{sum_for_all_products.round(2)}"
