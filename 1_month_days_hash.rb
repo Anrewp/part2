@@ -3,10 +3,8 @@
 require 'Date'
 
 month_days_hash = {}
-(1..12).each do |month_number| 
-  month_name = Date::MONTHNAMES[month_number]
-  month_days = Date.new(2020, month_number, -1).day
-  month_days_hash[month_name] = month_days
+Date::MONTHNAMES.compact.each.with_index(1) do |month, index|
+  month_days_hash[month] = Date.new(Time.now.year, index, -1).day
 end
 
-month_days_hash.each{ |month, days| puts month if days == 30 }
+month_days_hash.each { |month, days| puts month if days == 30 }
