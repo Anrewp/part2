@@ -30,4 +30,3 @@ products_hash.each do |p_name, p_info|
   sum_for_all_products += product_sum
 end
 puts "Sum for all proucts is: #{sum_for_all_products.round(2)}"
-

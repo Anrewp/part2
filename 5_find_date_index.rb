@@ -17,4 +17,3 @@ leap_day = is_a_leap_year ? 29 : 28
 days_in_month = [nil, 31, leap_day, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 puts days_in_month[1..month - 1].sum + day
-
