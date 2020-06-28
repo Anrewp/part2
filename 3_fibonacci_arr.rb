@@ -1,9 +1,8 @@
 # 3. Заполнить массив числами фибоначчи до 100
 
-arr = []
+arr = [1, 1]
 
-(1..100).each do |num|
-  arr.push(1) && next if num < 3
+loop do
   fibonacci_num = arr[- 1] + arr[- 2]
   break if fibonacci_num >= 100
   arr.push(fibonacci_num)
